@@ -103,7 +103,7 @@ guessed_letters = []
 while not success and guess_count < max_attempt:
     guess_count += 1
     print("\nAttempt %s" % guess_count)
-    my_guess = raw_input("What is your guess:")
+    my_guess = input("What is your guess:")
     guess_validation = validate_guess(my_guess, word_len, dictionary_dict, guessed_words)
     if not guess_validation[0]:
         failed_reason = guess_validation[1]
